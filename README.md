@@ -1,3 +1,12 @@
-# Binary-Search-Tree
-本项目是一个包含红黑树和B树以及基于二叉搜索树的汉英词典的实现。\
-This project is an implementation that includes red-black trees and B-trees, as well as Chinese-English Dictionary based on Binary-Search-Tree.
+运行前确保当前命令行为UTF-8编码，例如：对于 PowerShell，可以使用如下命令设置输出编码为UTF - 8。
+
+```powershell
+[Console]::OutputEncoding = [System.Text.UTF8Encoding]::new()
+```
+
+再依次运行以下命令：
+
+```powershell
+gcc -std=c99 -o main main.c B_Tree.c RB_Tree.c Tree.h -fexec-charset=utf-8
+./main
+```
